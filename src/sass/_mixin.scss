@@ -1,0 +1,34 @@
+@mixin spacedBetween {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 991px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@mixin flexHorizontalCentered {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media(max-width: 991px){
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@mixin circle($side, $color){
+    width: $side;
+    height: $side;
+    border-radius: 50%;
+    background-color: $color;
+}
+
+@mixin square($side, $color){
+    width: $side;
+    height: $side;
+    background-color: $color;
+}

@@ -1,0 +1,14 @@
+.square-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @include spacedBetween();
+
+  .square {
+    @include square(250px, #f00);
+
+    @media (max-width: 991px) {
+      margin-top: 20px;
+      @include square(150px, #f3df);
+    }
+  }
+}

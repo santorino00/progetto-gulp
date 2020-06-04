@@ -1,0 +1,12 @@
+.circle-wrapper{
+    @include flexHorizontalCentered();
+
+    .circle{
+        margin-top: 20px;
+        @include circle(150px, #fff);
+
+        @media (max-width: 991px){
+            @include circle(100px, #fd4);
+        }
+    }
+}
